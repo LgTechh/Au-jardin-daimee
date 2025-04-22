@@ -7,72 +7,113 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Au jardin D'aimée</title>
+    <title>Au jardin d'aimée</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"></div>
-            <div class="burger" id="burger">
-                &#9776;
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li class="dropdown">
-                    <a href="#produits">
-                        Produits <span class="arrow">▼</span>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#artisanat">Artisanat</a></li>
-                        <li><a href="#cuisine">Cuisine</a></li>
-                        <li><a href="#bijoux">Bijoux</a></li>
-                    </ul>
-                </li>
-                <li><a href="#apropos">À propos</a></li>
-                <li><a href="#instagram">
-                    <i class="fa-brands fa-instagram fa-xl"></i>
-                </a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+<header role="banner">
+    <nav role="navigation" aria-label="Menu principal">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Au jardin D'aimée" loading="lazy">
+        </div>
+        <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links" aria-labelledby="burger">
+            <li class="dropdown">
+                <a href="#produits" aria-haspopup="true" aria-expanded="false">
+                    Produits <span class="arrow" aria-hidden="true">▼</span>
+                </a>
+                <ul class="dropdown-menu" aria-label="Sous-menu produits">
+                    <li><a href="#artisanat">Artisanat</a></li>
+                    <li><a href="#cuisine">Cuisine</a></li>
+                    <li><a href="#bijoux">Bijoux</a></li>
+                </ul>
+            </li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#instagram" aria-label="Suivez-nous sur Instagram">
+                <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-        <section class="hero">
-            <div class="carousel-container">
-                <div class="carousel-slides">
-                    <div class="carousel-slide active">
-                        <img src="img/slide1.jpg" alt="Produit artisanal 1">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide2.jpg" alt="Produit artisanal 2">
-                    </div>
-                    <div class="carousel-slide">
-                        <img src="img/slide3.jpg" alt="Produit artisanal 3">
-                    </div>
+    <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title" class="visually-hidden">Au jardin D'aimée - Découvrez nos créations</h1>
+        <div class="carousel-container" role="region" aria-roledescription="carrousel" aria-label="Galerie de produits">
+            <div class="carousel-slides">
+                <div class="carousel-slide active" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
+                    <img src="img/slide1.jpg" alt="Produit artisanal 1">
                 </div>
-
-                <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="etsy-button">Voir sur Etsy</a>
-
-                <div class="carousel-nav">
-                    <button class="carousel-prev" aria-label="Image précédente">&lt;</button>
-                    <div class="carousel-dots">
-                        <!-- Les points seront générés en JS -->
-                    </div>
-                    <button class="carousel-next" aria-label="Image suivante">&gt;</button>
+                <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 3">
+                    <img src="img/slide2.jpg" alt="Produit artisanal 2">
+                </div>
+                <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 3">
+                    <img src="img/slide3.jpg" alt="Produit artisanal 3">
                 </div>
             </div>
-        </section>
-    </header>
-    <main>
-        <section id="produits">
-        </section>
-        <section id="apropos"></section>
-        <section id="instagram">
-            <!--<div class="serrure-container" onclick="entrerDansSerrure()">
-                <img src="img/serrure.png" alt="Serrure" class="serrure" />
-                <img src="img/bourdon.png" alt="Bourdon" class="bourdon" />
-            </div>-->
-        </section>
-        <section id="contact"></section>
-    </main>
-    <script src="scripts.js"></script>
+
+            <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="etsy-button" aria-label="Voir notre boutique sur Etsy">Voir sur Etsy</a>
+
+            <div class="carousel-nav" aria-label="Contrôles du carrousel">
+                <button class="carousel-prev" aria-label="Image précédente">&lt;</button>
+                <div class="carousel-dots" role="tablist" aria-label="Sélection de diapositives">
+                    <!-- Les points seront générés en JS -->
+                </div>
+                <button class="carousel-next" aria-label="Image suivante">&gt;</button>
+            </div>
+        </div>
+    </section>
+</header>
+<main role="main">
+    <section id="produits" aria-labelledby="produits-title">
+        <h2 id="produits-title" class="visually-hidden">Nos produits</h2>
+        <div class="grid-container">
+
+            <div class="card" role="article" aria-labelledby="artisanat-title">
+                <div class="image">
+                    <img src="img/artisanat.jpg" alt="Fleur Géante" loading="lazy">
+                </div>
+                <h3 id="artisanat-title">Artisanat</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+                <button aria-label="Découvrir plus sur l'artisanat">Découvrir Plus</button>
+            </div>
+
+            <div class="card" role="article" aria-labelledby="cuisine-title">
+                <div class="image">
+                    <img src="img/cuisine.jpg" alt="Atelier Cuisine" loading="lazy">
+                </div>
+                <h3 id="cuisine-title">Cuisine</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+                <button aria-label="Découvrir plus sur la cuisine">Découvrir Plus</button>
+            </div>
+
+            <div class="card" role="article" aria-labelledby="bijoux-title">
+                <div class="image">
+                    <img src="img/bijoux.jpg" alt="Fabrication de bijoux" loading="lazy">
+                </div>
+                <h3 id="bijoux-title">Bijoux</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+                <button aria-label="Découvrir plus sur les bijoux">Découvrir Plus</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" aria-labelledby="apropos-title">
+        <h2 id="apropos-title" class="visually-hidden"></h2>
+        <!-- Contenu à venir -->
+    </section>
+    <section id="instagram" aria-labelledby="instagram-title">
+        <h2 id="instagram-title" class="visually-hidden"></h2>
+        <!-- Contenu Instagram à venir -->
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+        <h2 id="contact-title" class="visually-hidden"></h2>
+        <!-- Formulaire de contact à venir -->
+    </section>
+</main>
+<footer role="contentinfo" aria-label="Informations de bas de page">
+    <!-- Ajoutez votre footer ici si nécessaire -->
+</footer>
+<script src="scripts.js"></script>
 </body>
 </html>
