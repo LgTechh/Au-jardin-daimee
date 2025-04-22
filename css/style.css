@@ -10,13 +10,14 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: #1B3A2F;
-    padding: 1rem 2rem;
+    padding: 0 1rem;
     position: relative;
     z-index: 1001;
 }
 
-.logo h1 {
-    margin: 0;
+.logo img {
+    width: 75px;
+    height: 75px;
 }
 
 .burger {
@@ -217,6 +218,60 @@ nav {
 }
 
 /* fin hero section */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+    max-width: 1000px;
+    margin: 5rem auto;
+}
+
+
+.card img{
+    width: 80%;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.card p {
+    font-size: 1rem;
+    max-width: 70%;
+    margin: 0 auto 1rem auto;
+    line-height: 1.4;
+}
+.card button {
+    border: none;
+    background: #767676;
+    color: antiquewhite;
+    padding: 5px 20px;
+    text-align: center;
+    cursor: pointer;
+    width: 120px;
+    transition: background-color 0.3s;
+}
+
+.card button:hover {
+    background-color: #5a5a5a;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
 
 @media (max-width: 768px) {
     .carousel-container {
