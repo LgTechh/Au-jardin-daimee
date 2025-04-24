@@ -277,6 +277,31 @@ nav {
     border: 0;
 }
 
+.about {
+    max-width: 600px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: beige;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.about img {
+    width: 40%;
+    height: 150px;
+    float: left;
+    margin-right: 10px;
+}
+
+.about p {
+    font-size: 1rem;
+    line-height: 1.4;
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+}
+
 
 @media (max-width: 768px) {
     .carousel-container {
