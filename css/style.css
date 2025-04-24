@@ -132,11 +132,13 @@ nav {
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .etsy-button {
     position: absolute;
-    bottom: 40px;
+    bottom: 35px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #E9B949;
@@ -156,13 +158,14 @@ nav {
 
 .carousel-slides {
     position: relative;
-    height: 300px;
+    height: 350px;
+    width: 100%;
 }
 
 /* Slides individuels */
 .carousel-slide {
     position: absolute;
-    top: 0;
+    top: 27px;
     left: 0;
     width: 100%;
     height: 100%;
@@ -183,10 +186,12 @@ nav {
 }
 
 .carousel-nav {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px 0;
+    margin-top: 30px;
+    z-index: 5;
 }
 
 .carousel-prev,
