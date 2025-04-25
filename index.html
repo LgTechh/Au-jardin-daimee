@@ -7,6 +7,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
     <title>Au jardin d'aimée</title>
 </head>
 <body>
@@ -99,7 +102,7 @@
     </section>
 
     <section id="apropos" aria-labelledby="apropos-title">
-        <h2 id="apropos-title" class="visually-hidden"></h2>
+        <h2 id="apropos-title"> Au Jardin D'Aimée </h2>
         <div class="about">
             <img src="img/artisanat.jpg" alt="Photo de la créatrice" loading="lazy">
             <p>Voici un exemple de texte qui commence à côté de l'image et qui va continuer à se placer à côté tant qu'il y a de l'espace disponible. Une fois que l'espace à côté de l'image est rempli, le texte va automatiquement passer en dessous de l'image et occuper toute la largeur de la div conteneur. Cet effet est obtenu grâce à la propriété CSS "float" qui permet à l'image de flotter à gauche, laissant le texte s'écouler autour. Le texte continuera de s'écouler jusqu'à ce qu'il atteigne la fin de l'image, puis il occupera naturellement toute la largeur disponible en dessous de l'image. Cette méthode est très efficace pour créer des mises en page où le texte et l'image interagissent de manière fluide.
@@ -107,10 +110,21 @@
         </div>
 
     </section>
+
     <section id="instagram" aria-labelledby="instagram-title">
-        <h2 id="instagram-title" class="visually-hidden"></h2>
-        <!-- Contenu Instagram à venir -->
+        <h2 id="instagram-title">Suivez-moi sur Instagram 📸</h2>
+        <div class="instagram-container">
+            <div class="instagram-preview">
+                <img src="img/insta.jpg" alt="Collage de nos créations sur Instagram" class="instagram-collage">
+                <p class="instagram-tagline">Cette serrure vous ouvre la porte de mon univers</p>
+                <div class="serrure-container" onclick="entrerDansSerrure()">
+                    <img src="img/serrure2.jpg" alt="serrure" class="serrure" />
+                    <img src="img/bourdon.png" alt="bourdon" class="bourdon" />
+                </div>
+            </div>
+        </div>
     </section>
+
     <section id="contact" aria-labelledby="contact-title">
         <h2 id="contact-title" class="visually-hidden"></h2>
         <!-- Formulaire de contact à venir -->
