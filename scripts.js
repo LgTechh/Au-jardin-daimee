@@ -1,15 +1,3 @@
-/*function entrerDansSerrure() {
-    const bourdon = document.querySelector('.bourdon');
-
-    // Lance l'animation
-    bourdon.classList.add('active');
-
-    // Redirection après délai (2s)
-    setTimeout(() => {
-    window.location.href = 'https://www.instagram.com/au_jardin_daimee/';
-}, 1000);
-}*/
-
 const burger = document.getElementById('burger');
 const navLinks = document.getElementById('nav-links');
 const dropdownLink = document.querySelector('.dropdown > a');
@@ -120,3 +108,13 @@ function initCarousel() {
 }
 
 document.addEventListener('DOMContentLoaded', initCarousel);
+
+function entrerDansSerrure() {
+    const bourdon = document.querySelector('.bourdon');
+
+    bourdon.classList.add('active');
+
+    setTimeout(() => {
+        window.location.href = 'https://www.instagram.com/au_jardin_daimee/';
+    }, 1000);
+}
