@@ -100,7 +100,7 @@ h3 {
 /* Hero section avec carrousel */
 .hero {
     width: 100%;
-    background-color: #2A2A2A;
+    background-color: #12322A;
     padding: 20px 0;
 }
 
@@ -116,7 +116,7 @@ h3 {
 
 .etsy-button {
     position: absolute;
-    bottom: 35px;
+    bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
     background-color: #E9B949;
@@ -136,6 +136,7 @@ h3 {
 
 .carousel-slides {
     position: relative;
+    top: 5px;
     height: 350px;
     width: 100%;
 }
@@ -168,7 +169,7 @@ h3 {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 20px;
     z-index: 5;
 }
 
