@@ -30,84 +30,86 @@ document.addEventListener('click', (e) => {
     }
 });
 
-function initCarousel() {
-    // Sélection des éléments
-    const slides = document.querySelectorAll('.carousel-slide');
-    const dotsContainer = document.querySelector('.carousel-dots');
-    const prevButton = document.querySelector('.carousel-prev');
-    const nextButton = document.querySelector('.carousel-next');
+if (document.querySelector('.carousel-container') !== null) {
+    function initCarousel() {
+        // Sélection des éléments
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dotsContainer = document.querySelector('.carousel-dots');
+        const prevButton = document.querySelector('.carousel-prev');
+        const nextButton = document.querySelector('.carousel-next');
 
-    let currentIndex = 0;
-    let interval = null;
-    const slideDelay = 4000; // Délai entre les slides (4 secondes)
+        let currentIndex = 0;
+        let interval = null;
+        const slideDelay = 4000; // Délai entre les slides (4 secondes)
 
-    slides.forEach((_, index) => {
-        const dot = document.createElement('div');
-        dot.classList.add('carousel-dot');
-        if (index === 0) dot.classList.add('active');
-        dot.addEventListener('click', () => {
-            goToSlide(index);
+        slides.forEach((_, index) => {
+            const dot = document.createElement('div');
+            dot.classList.add('carousel-dot');
+            if (index === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                goToSlide(index);
+                resetAutoSlide();
+            });
+            dotsContainer.appendChild(dot);
+        });
+
+        function goToSlide(index) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            document.querySelectorAll('.carousel-dot').forEach(dot => dot.classList.remove('active'));
+
+            slides[index].classList.add('active');
+            document.querySelectorAll('.carousel-dot')[index].classList.add('active');
+
+            currentIndex = index;
+        }
+
+        function prevSlide() {
+            const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
+            goToSlide(newIndex);
+        }
+
+        function nextSlide() {
+            const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
+            goToSlide(newIndex);
+        }
+
+        function startAutoSlide() {
+            if (interval === null) {
+                interval = setInterval(nextSlide, slideDelay);
+            }
+        }
+
+        function stopAutoSlide() {
+            if (interval !== null) {
+                clearInterval(interval);
+                interval = null;
+            }
+        }
+
+        function resetAutoSlide() {
+            stopAutoSlide();
+            startAutoSlide();
+        }
+
+        prevButton.addEventListener('click', () => {
+            prevSlide();
             resetAutoSlide();
         });
-        dotsContainer.appendChild(dot);
-    });
 
-    function goToSlide(index) {
-        slides.forEach(slide => slide.classList.remove('active'));
-        document.querySelectorAll('.carousel-dot').forEach(dot => dot.classList.remove('active'));
+        nextButton.addEventListener('click', () => {
+            nextSlide();
+            resetAutoSlide();
+        });
 
-        slides[index].classList.add('active');
-        document.querySelectorAll('.carousel-dot')[index].classList.add('active');
+        const carouselContainer = document.querySelector('.carousel-container');
+        carouselContainer.addEventListener('mouseenter', stopAutoSlide);
+        carouselContainer.addEventListener('mouseleave', startAutoSlide);
 
-        currentIndex = index;
-    }
-
-    function prevSlide() {
-        const newIndex = currentIndex === 0 ? slides.length - 1 : currentIndex - 1;
-        goToSlide(newIndex);
-    }
-
-    function nextSlide() {
-        const newIndex = currentIndex === slides.length - 1 ? 0 : currentIndex + 1;
-        goToSlide(newIndex);
-    }
-
-    function startAutoSlide() {
-        if (interval === null) {
-            interval = setInterval(nextSlide, slideDelay);
-        }
-    }
-
-    function stopAutoSlide() {
-        if (interval !== null) {
-            clearInterval(interval);
-            interval = null;
-        }
-    }
-
-    function resetAutoSlide() {
-        stopAutoSlide();
         startAutoSlide();
     }
-
-    prevButton.addEventListener('click', () => {
-        prevSlide();
-        resetAutoSlide();
-    });
-
-    nextButton.addEventListener('click', () => {
-        nextSlide();
-        resetAutoSlide();
-    });
-
-    const carouselContainer = document.querySelector('.carousel-container');
-    carouselContainer.addEventListener('mouseenter', stopAutoSlide);
-    carouselContainer.addEventListener('mouseleave', startAutoSlide);
-
-    startAutoSlide();
+    document.addEventListener('DOMContentLoaded', initCarousel);
 }
 
-document.addEventListener('DOMContentLoaded', initCarousel);
 
 function entrerDansSerrure() {
     const bourdon = document.querySelector('.bourdon');
