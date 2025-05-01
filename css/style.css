@@ -22,6 +22,15 @@ h3 {
     /* IM Fell English SC */
 }
 
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
 
 .logo img {
     width: 75px;
@@ -536,15 +545,6 @@ textarea {
 
 .footer-links li {
     white-space: nowrap;
-}
-
-.footer-links a {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.footer-links a:hover {
-    text-decoration: underline;
 }
 
 .footer-copyright {
