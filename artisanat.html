@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notre Artisanat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body>
+<header>
+    <nav role="navigation" aria-label="Menu principal">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo Au jardin D'aimée" loading="lazy">
+        </div>
+        <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+            &#9776;
+        </div>
+        <ul class="nav-links" id="nav-links" aria-labelledby="burger">
+            <li class="dropdown">
+                <a href="#produits" aria-haspopup="true" aria-expanded="false">
+                    Produits <span class="arrow" aria-hidden="true">▼</span>
+                </a>
+                <ul class="dropdown-menu" aria-label="Sous-menu produits">
+                    <li><a href="index.html#artisanat">Artisanat</a></li>
+                    <li><a href="index.html#cuisine">Cuisine</a></li>
+                    <li><a href="index.html#bijoux">Bijoux</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html#apropos">À propos</a></li>
+            <li><a href="index.html#instagram" aria-label="Suivez-nous sur Instagram">
+                <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i>
+            </a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="headerBackground">
+        <h1>Notre Artisanat</h1>
+        <p class="tagline">Des créations délicates, faites à la main avec passion.</p>
+    </div>
+</header>
+
+<p class="highlight">Phrase qui met l'accent sur le fait main.</p>
+
+<section class="featured">
+    <h2>Coup de Coeur</h2>
+    <div class="product-main">
+        <div class="product-image">Image du produit</div>
+        <div class="product-details">
+            <div>
+                <p class="product-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse lectus tortor, dignissim sit amet.</p>
+                <p class="product-description">Cras elementum ultrices diam. Maecenas ligula massa, varius a.</p>
+            </div>
+            <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="btn btn-small">Commander</a>
+        </div>
+    </div>
+</section>
+
+<section class="products">
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-card-image">Image du produit</div>
+            <p class="product-card-title">Bracelet Perles</p>
+            <p class="product-card-price">45,00 €</p>
+            <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="btn btn-small">Commander</a>
+        </div>
+        <div class="product-card">
+            <div class="product-card-image">Image du produit</div>
+            <p class="product-card-title">Collier Pierre</p>
+            <p class="product-card-price">65,00 €</p>
+            <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="btn btn-small">Commander</a>
+        </div>
+        <div class="product-card">
+            <div class="product-card-image">Image du produit</div>
+            <p class="product-card-title">Boucles d'Oreilles</p>
+            <p class="product-card-price">32,00 €</p>
+            <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="btn btn-small">Commander</a>
+        </div>
+    </div>
+</section>
+
+<section class="piedDePage">
+    <p>Une envie particulière ? <a class="contactLink" href="index.html#contact">Contactez-moi </a>directement !</p>
+</section>
+
+<footer role="contentinfo" aria-label="Informations de bas de page" class="footer">
+    <div class="first-bloc">
+        <div class="footer-logo">
+            <img src="img/logo.png" alt="Logo avec abeille">
+        </div>
+
+        <div class="footer-nav">
+            <ul class="footer-links">
+                <li><a href="index.html">Accueil</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-copyright">
+        <p>&copy; 2025 Au jardin d'aimée. Tous droits réservés.</p>
+    </div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>
