@@ -241,19 +241,22 @@ a:hover {
     line-height: 1.4;
     color: #e8e5dd;
 }
-.card button {
+.card .button {
+    display: block;
+    width: 100px;
     border: none;
     background: #0A5F44;
     color: #ffffff;
     padding: 5px 20px;
     text-align: center;
     cursor: pointer;
-    width: 120px;
     transition: background-color 0.3s;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+    margin: 0 auto; /* Pour centrer le bouton */
 }
 
-.card button:hover {
+.card .button:hover {
     background-color: #116d4f;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
