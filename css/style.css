@@ -556,6 +556,23 @@ textarea {
     align-self: center;
 }
 
+/* fin footer */
+
+/* Page merci */
+.confirmation-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+}
+/* fin page Merci */
+
 @media (max-width: 768px) {
     .carousel-container {
         max-width: 100%;
