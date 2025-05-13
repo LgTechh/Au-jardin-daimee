@@ -571,6 +571,21 @@ textarea {
     height: 100vh;
     text-align: center;
 }
+
+.confirmation-link  {
+    color: #C5A77B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.confirmation-link:hover {
+    color: #C5A77B;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
 /* fin page Merci */
 
 @media (max-width: 768px) {
