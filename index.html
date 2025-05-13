@@ -13,187 +13,197 @@
     <title>Au jardin d'aimée</title>
 </head>
 <body>
-<header role="banner">
-    <nav role="navigation" aria-label="Menu principal">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo Au jardin D'aimée" loading="lazy">
-        </div>
-        <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
-            &#9776;
-        </div>
-        <ul class="nav-links" id="nav-links" aria-labelledby="burger">
-            <li class="dropdown">
-                <a href="#produits" aria-haspopup="true" aria-expanded="false">
-                    Produits <span class="arrow" aria-hidden="true">▼</span>
-                </a>
-                <ul class="dropdown-menu" aria-label="Sous-menu produits">
-                    <li><a href="#artisanat">Artisanat</a></li>
-                    <li><a href="#cuisine">Cuisine</a></li>
-                    <li><a href="#bijoux">Bijoux</a></li>
-                </ul>
-            </li>
-            <li><a href="#apropos">À propos</a></li>
-            <li><a href="#instagram" aria-label="Suivez-nous sur Instagram">
-                <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i>
-            </a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <section class="hero" aria-labelledby="hero-title">
-        <h1 id="hero-title" class="visually-hidden">Au jardin D'aimée - Découvrez nos créations</h1>
-        <div class="carousel-container" role="region" aria-roledescription="carrousel" aria-label="Galerie de produits">
-            <div class="carousel-slides">
-                <div class="carousel-slide active" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
-                    <img src="img/slide1.jpg" alt="Produit artisanal 1">
-                </div>
-                <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 3">
-                    <img src="img/slide2.jpg" alt="Produit artisanal 2">
-                </div>
-                <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 3">
-                    <img src="img/slide3.jpg" alt="Produit artisanal 3">
-                </div>
+    <header role="banner">
+        <nav role="navigation" aria-label="Menu principal">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Au jardin D'aimée" loading="lazy">
             </div>
-
-            <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="etsy-button" aria-label="Voir notre boutique sur Etsy">Voir sur Etsy</a>
-
-            <div class="carousel-nav" aria-label="Contrôles du carrousel">
-                <button class="carousel-prev" aria-label="Image précédente">&lt;</button>
-                <div class="carousel-dots" role="tablist" aria-label="Sélection de diapositives">
-                    <!-- Les points seront générés en JS -->
-                </div>
-                <button class="carousel-next" aria-label="Image suivante">&gt;</button>
+            <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                &#9776;
             </div>
-        </div>
-    </section>
-</header>
-<main role="main">
-    <section id="produits" aria-labelledby="produits-title">
-        <h2 id="produits-title" class="visually-hidden">Nos produits</h2>
-        <div class="grid-container">
-
-            <div id="artisanat" class="card" role="article" aria-labelledby="artisanat-title">
-                <div class="image">
-                    <img src="img/lapinartisanat.jpg" alt="Doudou Lapin" loading="lazy">
-                </div>
-                <h3 id="artisanat-title">Artisanat</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
-                <a href="artisanat.html" class="button" aria-label="Découvrir plus sur l'artisanat">Découvrir Plus</a>
-            </div>
-
-            <div id="cuisine" class="card" role="article" aria-labelledby="cuisine-title">
-                <div class="image">
-                    <img src="img/cuisine.jpg" alt="Atelier Cuisine" loading="lazy">
-                </div>
-                <h3 id="cuisine-title">Cuisine</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
-                <a href="bijoux.html" class="button" aria-label="Découvrir plus sur la cuisine">Découvrir Plus</a>
-            </div>
-
-            <div id="bijoux" class="card" role="article" aria-labelledby="bijoux-title">
-                <div class="image">
-                    <img src="img/bijoux.jpg" alt="Fabrication de bijoux" loading="lazy">
-                </div>
-                <h3 id="bijoux-title">Bijoux</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
-                <a href="bijoux.html" class="button" aria-label="Découvrir plus sur les bijoux">Découvrir Plus</a>
-            </div>
-        </div>
-    </section>
-    <section id="apropos" aria-labelledby="apropos-title">
-        <h2 id="apropos-title"> Au Jardin D'Aimée </h2>
-        <div class="about">
-            <img src="img/artisanat.jpg" alt="Photo de la créatrice" loading="lazy">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ut mi id suscipit. Curabitur placerat congue sem sit amet rutrum. Nullam dictum auctor viverra. Vivamus tincidunt mi at urna aliquet, id scelerisque nulla faucibus. Morbi dictum, turpis ut laoreet hendrerit, quam dui luctus mi, id pretium purus urna non turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed quis condimentum erat. Pellentesque dapibus volutpat tempor. Phasellus lacinia aliquet tellus sit amet laoreet. Cras a sem arcu. Fusce urna metus, feugiat ut convallis ut, euismod eget ante. Maecenas vitae lacinia purus. Ut placerat nunc.
-            </p>
-        </div>
-
-    </section>
-
-    <section id="instagram" aria-labelledby="instagram-title">
-        <h2 id="instagram-title">Suivez-moi sur Instagram  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24"></h2>
-        <div class="instagram-container">
-            <div class="instagram-preview">
-                <img src="img/insta.jpg" alt="Collage de nos créations sur Instagram" class="instagram-collage">
-                <p class="instagram-tagline">Cette serrure vous ouvre la porte de mon univers</p>
-                <div class="serrure-container" onclick="entrerDansSerrure()">
-                    <img src="img/serrure2.jpg" alt="serrure" class="serrure" />
-                    <img src="img/bourdon.png" alt="bourdon" class="bourdon" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" aria-labelledby="contact-title">
-        <h2 id="contact-title" class="visually-hidden"></h2>
-
-        <div class="form-container">
-            <h3>Un projet ? Une idée ? Parlons-en ensemble.</h3>
-            <div class="name-fields">
-                <div class="name-field" style="flex: 1;">
-                    <label for="nom">Nom</label>
-                    <input type="text" id="nom" name="nom" required>
-                </div>
-                <div class="name-field" style="flex: 1;">
-                    <label for="prenom">Prénom</label>
-                    <input type="text" id="prenom" name="prenom" required>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="email">Adresse mail</label>
-                <input type="email" id="email" name="email" required>
-            </div>
-
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" required></textarea>
-            </div>
-
-            <button type="submit">Envoyer</button>
-
-            <div class="divider"></div>
-
-            <div class="contact-section">
-                <h2>Contact :</h2>
-                <div class="social-links">
-                    <a href="#" class="social-link" aria-label="Email">
-                        <i class="fa-solid fa-envelope fa-lg"></i>
+            <ul class="nav-links" id="nav-links" aria-labelledby="burger">
+                <li class="dropdown">
+                    <a href="#produits" aria-haspopup="true" aria-expanded="false">
+                        Produits <span class="arrow" aria-hidden="true">▼</span>
                     </a>
-                    <a href="#" class="social-link" aria-label="Etsy">
-                        <i class="fa-brands fa-etsy fa-lg"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Facebook">
-                        <i class="fa-brands fa-square-facebook fa-lg"></i>
-                    </a>
-                    <a href="#" class="social-link" aria-label="Instagram">
-                        <i class="fa-brands fa-square-instagram fa-lg"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer role="contentinfo" aria-label="Informations de bas de page" class="footer">
-    <div class="first-bloc">
-        <div class="footer-logo">
-            <img src="img/logo.png" alt="Logo avec abeille">
-        </div>
-
-        <div class="footer-nav">
-            <ul class="footer-links">
-                <li><a href="#produits">Produits</a></li>
+                    <ul class="dropdown-menu" aria-label="Sous-menu produits">
+                        <li><a href="#artisanat">Artisanat</a></li>
+                        <li><a href="#cuisine">Cuisine</a></li>
+                        <li><a href="#bijoux">Bijoux</a></li>
+                    </ul>
+                </li>
                 <li><a href="#apropos">À propos</a></li>
-                <li><a href="#instagram">Instagram</a></li>
+                <li><a href="#instagram" aria-label="Suivez-nous sur Instagram">
+                    <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i>
+                </a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
-        </div>
-    </div>
+        </nav>
 
-        <div class="footer-copyright">
-            <p>&copy; 2025 Au jardin d'aimée. Tous droits réservés.</p>
+        <section class="hero" aria-labelledby="hero-title">
+            <h1 id="hero-title" class="visually-hidden">Au jardin D'aimée - Découvrez nos créations</h1>
+            <div class="carousel-container" role="region" aria-roledescription="carrousel" aria-label="Galerie de produits">
+                <div class="carousel-slides">
+                    <div class="carousel-slide active" role="group" aria-roledescription="diapositive" aria-label="1 sur 3">
+                        <img src="img/slide1.jpg" alt="Produit artisanal 1">
+                    </div>
+                    <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="2 sur 3">
+                        <img src="img/slide2.jpg" alt="Produit artisanal 2">
+                    </div>
+                    <div class="carousel-slide" role="group" aria-roledescription="diapositive" aria-label="3 sur 3">
+                        <img src="img/slide3.jpg" alt="Produit artisanal 3">
+                    </div>
+                </div>
+
+                <a href="https://www.etsy.com/fr/shop/mondoudoucrochet?ref=seller-platform-mcnav" class="etsy-button" aria-label="Voir notre boutique sur Etsy">Voir sur Etsy</a>
+
+                <div class="carousel-nav" aria-label="Contrôles du carrousel">
+                    <button class="carousel-prev" aria-label="Image précédente">&lt;</button>
+                    <div class="carousel-dots" role="tablist" aria-label="Sélection de diapositives">
+                        <!-- Les points seront générés en JS -->
+                    </div>
+                    <button class="carousel-next" aria-label="Image suivante">&gt;</button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main role="main">
+        <section id="produits" aria-labelledby="produits-title">
+            <h2 id="produits-title" class="visually-hidden">Nos produits</h2>
+            <div class="grid-container">
+
+                <div id="artisanat" class="card" role="article" aria-labelledby="artisanat-title">
+                    <div class="image">
+                        <img src="img/lapinartisanat.jpg" alt="Doudou Lapin" loading="lazy">
+                    </div>
+                    <h3 id="artisanat-title">Artisanat</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+                    <a href="artisanat.html" class="button" aria-label="Découvrir plus sur l'artisanat">Découvrir Plus</a>
+                </div>
+
+                <div id="cuisine" class="card" role="article" aria-labelledby="cuisine-title">
+                    <div class="image">
+                        <img src="img/cuisine.jpg" alt="Atelier Cuisine" loading="lazy">
+                    </div>
+                    <h3 id="cuisine-title">Cuisine</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+                    <a href="bijoux.html" class="button" aria-label="Découvrir plus sur la cuisine">Découvrir Plus</a>
+                </div>
+
+                <div id="bijoux" class="card" role="article" aria-labelledby="bijoux-title">
+                    <div class="image">
+                        <img src="img/bijoux.jpg" alt="Fabrication de bijoux" loading="lazy">
+                    </div>
+                    <h3 id="bijoux-title">Bijoux</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque feugiat.</p>
+                    <a href="bijoux.html" class="button" aria-label="Découvrir plus sur les bijoux">Découvrir Plus</a>
+                </div>
+            </div>
+        </section>
+        <section id="apropos" aria-labelledby="apropos-title">
+            <h2 id="apropos-title"> Au Jardin D'Aimée </h2>
+            <div class="about">
+                <img src="img/artisanat.jpg" alt="Photo de la créatrice" loading="lazy">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In auctor ut mi id suscipit. Curabitur placerat congue sem sit amet rutrum. Nullam dictum auctor viverra. Vivamus tincidunt mi at urna aliquet, id scelerisque nulla faucibus. Morbi dictum, turpis ut laoreet hendrerit, quam dui luctus mi, id pretium purus urna non turpis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed quis condimentum erat. Pellentesque dapibus volutpat tempor. Phasellus lacinia aliquet tellus sit amet laoreet. Cras a sem arcu. Fusce urna metus, feugiat ut convallis ut, euismod eget ante. Maecenas vitae lacinia purus. Ut placerat nunc.
+                </p>
+            </div>
+
+        </section>
+
+        <section id="instagram" aria-labelledby="instagram-title">
+            <h2 id="instagram-title">Suivez-moi sur Instagram  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="24" height="24"></h2>
+            <div class="instagram-container">
+                <div class="instagram-preview">
+                    <img src="img/insta.jpg" alt="Collage de nos créations sur Instagram" class="instagram-collage">
+                    <p class="instagram-tagline">Cette serrure vous ouvre la porte de mon univers</p>
+                    <div class="serrure-container" onclick="entrerDansSerrure()">
+                        <img src="img/serrure2.jpg" alt="serrure" class="serrure" />
+                        <img src="img/bourdon.png" alt="bourdon" class="bourdon" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" aria-labelledby="contact-title">
+            <h2 id="contact-title" class="visually-hidden"></h2>
+
+            <form id="contact-form" action="https://formsubmit.co/f19839e9490686e48f2fe614d4c781b1" method="POST">
+                <div class="form-container">
+                    <h3>Un projet ? Une idée ? Parlons-en ensemble.</h3>
+
+                    <div class="name-fields">
+                        <div class="name-field" style="flex: 1;">
+                            <label for="nom">Nom</label>
+                            <input type="text" id="nom" name="nom" required>
+                        </div>
+                        <div class="name-field" style="flex: 1;">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" id="prenom" name="prenom" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Adresse mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+
+                    <input type="hidden" name="_captcha" value="true">
+                    <input type="hidden" name="_subject" value="Nouveau message du site Au jardin d'aimée">
+                    <input type="hidden" name="_autoresponse" value="Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_next" value="https://lgtechh.github.io/Au-jardin-daimee/merci.html">
+
+
+                    <button type="submit">Envoyer</button>
+                    <div class="divider"></div>
+
+                    <div class="contact-section">
+                        <h2>Contact :</h2>
+                        <div class="social-links">
+                            <a href="#" id="email-link" class="social-link" aria-label="Email">
+                                <i class="fa-solid fa-envelope fa-lg"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Etsy">
+                                <i class="fa-brands fa-etsy fa-lg"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fa-brands fa-square-facebook fa-lg"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fa-brands fa-square-instagram fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+
+    </main>
+    <footer role="contentinfo" aria-label="Informations de bas de page" class="footer">
+        <div class="first-bloc">
+            <div class="footer-logo">
+                <img src="img/logo.png" alt="Logo avec abeille">
+            </div>
+
+            <div class="footer-nav">
+                <ul class="footer-links">
+                    <li><a href="#produits">Produits</a></li>
+                    <li><a href="#apropos">À propos</a></li>
+                    <li><a href="#instagram">Instagram</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
-</footer>
-<script src="scripts.js"></script>
+
+            <div class="footer-copyright">
+                <p>&copy; 2025 Au jardin d'aimée. Tous droits réservés.</p>
+            </div>
+    </footer>
+    <script src="scripts.js"></script>
 </body>
 </html>
