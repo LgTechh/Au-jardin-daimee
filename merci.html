@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Merci pour votre message !</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header role="banner">
+        <nav role="navigation" aria-label="Menu principal">
+            <div class="logo">
+                <img src="img/logo.png" alt="Logo Au jardin D'aimée" loading="lazy">
+            </div>
+            <div class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                &#9776;
+            </div>
+            <ul class="nav-links" id="nav-links" aria-labelledby="burger">
+                <li class="dropdown">
+                    <a href="index.html#produits" aria-haspopup="true" aria-expanded="false">
+                        Produits <span class="arrow" aria-hidden="true">▼</span>
+                    </a>
+                    <ul class="dropdown-menu" aria-label="Sous-menu produits">
+                        <li><a href="index.html#artisanat">Artisanat</a></li>
+                        <li><a href="index.html#cuisine">Cuisine</a></li>
+                        <li><a href="index.html#bijoux">Bijoux</a></li>
+                    </ul>
+                </li>
+                <li><a href="index.html#apropos">À propos</a></li>
+                <li><a href="index.html#instagram" aria-label="Suivez-nous sur Instagram">
+                    <i class="fa-brands fa-instagram fa-xl" aria-hidden="true"></i>
+                </a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="confirmation-message">
+        <h1>Merci 💌</h1>
+        <p>Votre message a bien été envoyé. Je vous répondrai au plus vite.</p>
+        <a href="index.html">Retour à l’accueil</a>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
