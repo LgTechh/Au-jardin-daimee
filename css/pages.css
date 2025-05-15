@@ -289,7 +289,7 @@ a:hover {
     display: block;
 }
 
-.piedDePage {
+.beforeFooterText {
     margin-top: 30px;
     text-align: center;
     font-size: 13px;
@@ -376,7 +376,104 @@ a:hover {
 
 /*fin footer */
 
-@media (min-width: 769px) {
+/* debut dev tablette */
+@media (min-width: 768px) and (max-width: 834px) {
+    .headerBackground {
+        height: 300px;
+        width: 100%;
+        margin: 0 auto;
+        border-radius: 4px;
+    }
+
+    .headerBackground::before {
+        border-radius: 4px;
+        background-position: center 30%;
+    }
+
+    .headerBackground h1 {
+        font-size: 32px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        max-width: 80%;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .highlight {
+        font-size: 20px;
+        margin: 30px 0;
+    }
+
+    .product-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        width: 90%;
+        margin: 3.4rem auto 0;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .product-card-title {
+        font-size: 18px;
+    }
+
+    .product-card-price {
+        font-size: 16px;
+    }
+
+    .product-description {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .btn {
+        font-size: 16px;
+        width: 120px;
+        padding: 10px 15px;
+    }
+
+    .btn-small {
+        width: 65%;
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .beforeFooterText {
+        font-size: 18px;
+        padding: 25px 0;
+        margin-top: 40px;
+    }
+
+    .footer-logo img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .footer-links {
+        font-size: 1rem;
+        width: 200px;
+    }
+
+    .footer-copyright {
+        font-size: 1rem;
+    }
+}
+
+/* fin dev tablette */
+
+/* debut dev pc */
+@media (min-width: 835px) {
     .burger {
         display: none;
     }
