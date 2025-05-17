@@ -724,6 +724,7 @@ textarea {
 
     #instagram {
         padding: 2rem 3rem 4rem 3rem;
+        max-width: 1500px;
     }
 
     #instagram-title {
