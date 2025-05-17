@@ -446,7 +446,7 @@ textarea {
     border: none;
     padding: 12px;
     font-size: 16px;
-    width: 100%;
+    width: 97%;
     border-radius: 4px;
     cursor: pointer;
     font-weight: bold;
@@ -606,7 +606,7 @@ textarea {
     }
 
     .burger {
-        font-size: 2.3rem;
+        font-size: 2.5rem;
     }
 
     .carousel-container {
@@ -620,6 +620,10 @@ textarea {
     .about {
         max-width: 100%;
         width: 87%;
+    }
+
+    .about p {
+        font-size: 1.3rem;
     }
 
     .form-container {
@@ -637,12 +641,17 @@ textarea {
         width: 95%;
     }
 
+    #prenom, #nom {
+        width: 90%;
+    }
+
     .form-container button {
         width: 60%;
         margin: 0 auto;
         display: block;
         font-size: 18px;
         padding: 14px;
+        border-radius: 5px;
     }
 
 }
@@ -686,6 +695,129 @@ textarea {
 
     .dropdown.active .dropdown-menu {
         display: block;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2.3rem;
+        text-align: center;
+        max-width: 1000px;
+        margin: 4rem auto 5rem auto;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+    }
+
+    .card p {
+        font-size: 1.2rem;
+    }
+
+    .about {
+        max-width: 60%;
+    }
+
+    .about p {
+        font-size: 1.3rem;
+        letter-spacing: 0.1rem;
+    }
+
+    #instagram {
+        padding: 2rem 3rem 4rem 3rem;
+    }
+
+    #instagram-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .instagram-container {
+        max-width: 900px;
+    }
+
+
+    .instagram-collage {
+        width: 80%;
+        margin-bottom: 0;
+    }
+
+    .instagram-tagline {
+        width: 80%;
+        font-size: 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-container {
+        margin: 60px auto;
+        max-width: 700px;
+        width: 80%;
+        padding: 25px;
+    }
+
+    .form-container h3 {
+        font-size: 1.8rem;
+        margin-bottom: 2rem;
+    }
+
+    .form-group {
+        margin-bottom: 25px;
+    }
+
+    label {
+        font-size: 1.2rem;
+        margin-bottom: 8px;
+    }
+
+    .name-fields {
+        gap: 20px;
+        margin-bottom: 25px;
+    }
+
+    input, textarea {
+        width: 95%;
+        padding: 12px;
+        font-size: 1.1rem;
+        border-width: 2px;
+    }
+
+    #prenom, #nom {
+        width: 90%;
+        font-size: 1.1rem;
+    }
+
+    .form-container button {
+        width: 60%;
+        margin: 10px auto;
+        display: block;
+        font-size: 1.3rem;
+        padding: 15px;
+        border-radius: 6px;
+    }
+
+    .social-links {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        gap: 30px;
+    }
+
+    .social-link {
+        font-size: 1.5rem;
+    }
+
+    .footer-logo img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .footer-links {
+        font-size: 0.7rem;
+    }
+
+    .footer-copyright {
+        font-size: 0.7rem;
     }
 }
 
