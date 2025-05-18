@@ -113,6 +113,10 @@ a:hover {
     padding: 20px 0;
 }
 
+h1, .hero h1 {
+    font-size: 2rem;
+}
+
 .carousel-container {
     position: relative;
     max-width: 800px;
