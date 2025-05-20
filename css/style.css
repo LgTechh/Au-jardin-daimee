@@ -218,11 +218,10 @@ h1, .hero h1 {
 .grid-container{
     display: grid;
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 5vw;
     text-align: center;
     max-width: 1000px;
-    margin-top: 4rem ;
-    margin-bottom: 3rem;
+    margin: 4rem auto 3rem auto;
 }
 
 .card img{
@@ -619,6 +618,7 @@ textarea {
 
     .grid-container {
         grid-template-columns: 1fr 1fr;
+        gap: 4vw;
     }
 
     .about {
@@ -703,7 +703,7 @@ textarea {
 
     .grid-container {
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 2.3rem;
+        gap: 3vw;
         text-align: center;
         max-width: 1000px;
         margin: 4rem auto 5rem auto;
@@ -728,7 +728,9 @@ textarea {
 
     #instagram {
         padding: 2rem 3rem 4rem 3rem;
-        max-width: 1500px;
+        max-width: 1700px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     #instagram-title {
@@ -738,6 +740,7 @@ textarea {
 
     .instagram-container {
         max-width: 900px;
+
     }
 
 
@@ -757,7 +760,7 @@ textarea {
 
     .form-container {
         margin: 60px auto;
-        max-width: 700px;
+        max-width: 600px;
         width: 80%;
         padding: 25px;
     }
